@@ -1,0 +1,153 @@
+body{
+	font-family: Tahoma,Arial,PingHei,"Helvetica Neue","Hiragino Sans GB","Microsoft yahei",SimSum,sans-serif;
+
+}
+.container{
+	width: 700px;
+    position: fixed;
+    background: url(../images/bg.jpg) center repeat-y;
+    background-size: cover;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+}
+img{
+	max-width: 100%;
+}
+.center{
+	cursor: pointer;
+}
+.center,.box{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+}
+.box{
+	opacity: .5;
+	border-radius: 100%;
+	overflow: hidden;
+/*	border: 2px solid #85f314;*/
+	box-sizing:border-box;
+}
+.box.active{
+	opacity: 1;
+	transform:scale(1.2);
+}
+.awardForm{
+	position: fixed;
+	right: -350px;
+    top: 0px;
+    transition:right .5s linear;
+    -webkit-transition:right .5s linear;
+}
+.awardForm input{
+	border: 0;
+	border-bottom: 1px solid #eee;
+	margin-left: 10px;
+	outline: none;
+	text-indent: 10px;
+}
+.awardForm.on{
+	right: -50px;
+}
+.awardForm input:focus{
+	border-bottom: 1px solid #ed482a;
+}
+.awardForm .submit{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background:#a9d053;
+	color: #fff;
+	text-align: center;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:rgba(0,0,0,.5);
+	z-index: 1;
+	display: none;
+}
+.modal-content{
+	position: absolute;
+	top: 60%;
+	left: 50%; 
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	background:#a9d053;
+	text-align: center;
+	color: #000;
+	width: 300px;
+    border-radius: 10px;
+    padding: 4% 0 1%;
+}
+.modal-content h2{
+	font-size:18px;
+	font-weight: normal; 
+	margin: 0;
+}
+.modal-content p{
+	font-size:26px;
+	font-weight: bold; 
+	margin:12px auto;
+}
+.modal img{
+	position: absolute;
+	top: -30%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+}
+.modal-content .close{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button,  
+input[type=number]::-webkit-outer-spin-button {  
+    -webkit-appearance: none;  
+    margin: 0;  
+} 
+.check{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	padding:0 40px 0 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	background: #eee;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.check span{
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	animation:loop .8s ease-out infinite;
+}
+@keyframes loop{
+	0%{
+		right: 5px;
+	}
+	50%{
+		right: 15px;
+	}
+	100%{
+		right:5px;
+	}
+}
+
+
+

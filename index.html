@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>健身抽奖</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="your keywords">
+    <meta name="description" content="your description">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="center">
+			<img src="images/logo.jpg" alt="">
+		</div>
+		<div class="box award1 active" data-award='5000储值卡'>
+			<img src="images/award1.jpg" alt="">
+		</div>
+		<div class="box award2" data-award='3000储值卡'>
+			<img src="images/award2.jpg" alt="">
+		</div>
+		<div class="box award3" data-award='1500储值卡'>
+			<img src="images/award3.jpg" alt="">
+		</div>
+		<div class="box award4" data-award='体态评估调整课（1节）'>
+			<img src="images/award4.jpg" alt="">
+		</div>
+		<div class="box award5" data-award='小团体课（1节）'>
+			<img src="images/award5.jpg" alt="">
+		</div>	
+		<div class="box award6" data-award='SKII前男友面膜（1盒）'>
+			<img src="images/award6.jpg" alt="">
+		</div>
+		<div class="box award7" data-award='伸展私教'>
+			<img src="images/award7.jpg" alt="">
+		</div>
+		<div class="box award8" data-award='普拉提私教'>
+			<img src="images/award8.jpg" alt="">
+		</div>
+		<div class="box award9" data-award='EMS（1节）'>
+			<img src="images/award9.jpg" alt="">
+		</div>
+		<div class="box award10" data-award='康复（1节）'>
+			<img src="images/award10.jpg" alt="">
+		</div>
+	</div>
+	<!-- 输入奖品数量 -->
+	<form action="" class="awardForm">
+		<h2>奖品数量重置</h2>
+		<p>5000储值卡 <input type="number" class='award0'></p>
+		<p>3000储值卡 <input type="number" class='award1'></p>
+		<p>1500储值卡 <input type="number" class='award2'></p>
+		<p>体态评估调整课 <input type="number" class='award3'></p>
+		<p>小团体课<input type="number" class='award4'></p>
+		<p>SKII前男友面膜 <input type="number" class='award5'></p>
+		<p>伸展私教 <input type="number" class='award6'></p>
+		<p>普拉提私教 <input type="number" class='award7'></p>
+		<p>EMS<input type="number" class='award8'></p>
+		<p>康复<input type="number" class='award9'></p>
+		<a class='submit'>提交</a>
+	</form>
+	<!-- 查看奖品数量侧边栏 -->
+	<a class='check'>设置与查看奖品数量 <span><<</span></a>
+	<!-- 领取成功弹窗 -->
+	<div class="modal">
+		<div class="modal-content">
+			<img src="images/modal.png" alt="">
+			<p>2PF一周年店庆</p>
+			<h2>恭喜，中奖啦！</h2>
+			<!-- <h3>2PF</h3> -->
+			<p class='awardContent'></p>
+			<span class="close">x</span>
+		</div>
+	</div>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/common.js'></script>
+</body>
+</html>
